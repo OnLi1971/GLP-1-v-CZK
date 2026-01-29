@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saxenda vs Ozempic vs Wegovy vs Mounjaro: srovnání účinnosti a rozdílů | Skim Medi Digest</title>
+  <meta name="description" content="Důkladné srovnání liraglutidu (Saxenda), semaglutidu (Ozempic/Wegovy) a tirzepatidu (Mounjaro). Mechanismus, dávkování, účinnost a graf redukce váhy za 18 měsíců.">
+
+  <!-- Open Graph meta tagy -->
+  <meta property="og:title" content="Saxenda vs Ozempic vs Wegovy vs Mounjaro: srovnání účinnosti a rozdílů">
+  <meta property="og:description" content="Liraglutid vs semaglutid vs tirzepatid přehledně: mechanismus, dávkování, účinnost, nežádoucí účinky a graf váhového poklesu za 18 měsíců.">
+  <meta property="og:url" content="https://med-digest-bot.lovable.app/clanek/srovnani-saxenda-ozempic-wegovy-mounjaro">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Skim Medi Digest">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saxenda vs Ozempic vs Wegovy vs Mounjaro">
+  <meta name="twitter:description" content="Srovnání GLP-1 léků a tirzepatidu: účinnost, rozdíly a graf za 18 měsíců.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #0f0f23;
+      --bg-secondary: #1a1a2e;
+      --bg-card: #16162a;
+      --bg-card-alt: #1e1e3a;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border-color: #2d2d4a;
+      --accent-purple: #a855f7;
+      --accent-purple-soft: rgba(168, 85, 247, 0.15);
+      --accent-green: #10b981;
+      --accent-green-soft: rgba(16, 185, 129, 0.15);
+      --accent-blue: #3b82f6;
+      --accent-blue-soft: rgba(59, 130, 246, 0.15);
+      --accent-amber: #f59e0b;
+      --accent-amber-soft: rgba(245, 158, 11, 0.15);
+      --gradient-hero: linear-gradient(135deg, #1a1a2e 0%, #16162a 50%, #1e1e3a 100%);
+      --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+      --radius: 12px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-primary: #f8fafc;
+        --bg-secondary: #f1f5f9;
+        --bg-card: #ffffff;
+        --bg-card-alt: #f8fafc;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --text-muted: #64748b;
+        --border-color: #e2e8f0;
+        --accent-purple-soft: rgba(168, 85, 247, 0.1);
+        --accent-green-soft: rgba(16, 185, 129, 0.1);
+        --accent-blue-soft: rgba(59, 130, 246, 0.1);
+        --accent-amber-soft: rgba(245, 158, 11, 0.1);
+        --gradient-hero: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+        --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    header {
+      background: var(--gradient-hero);
+      padding: 3rem 0 4rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 0.375rem;
+      padding: 0.375rem 0.75rem; border-radius: 9999px;
+      font-size: 0.75rem; font-weight: 500;
+      background: var(--accent-purple-soft); color: var(--accent-purple);
+    }
+    .badge.green { background: var(--accent-green-soft); color: var(--accent-green); }
+    .badge.blue  { background: var(--accent-blue-soft);  color: var(--accent-blue); }
+    .badge.amber { background: var(--accent-amber-soft); color: var(--accent-amber); }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700; line-height: 1.2; margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-green) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+    .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .pill {
+      display: inline-block;
+      padding: 0.375rem 0.875rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+    }
+
+    main { padding: 3rem 0; }
+
+    .kpi-section { margin-bottom: 3rem; }
+    .kpi-section-title {
+      font-size: 1rem; font-weight: 600; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 1.25rem; text-align: center;
+    }
+    .kpi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    @media (max-width: 600px) { .kpi-grid { grid-template-columns: 1fr; } }
+
+    .kpi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: var(--shadow-card);
+    }
+    .kpi-card.purple { border-left: 4px solid var(--accent-purple); }
+    .kpi-card.green  { border-left: 4px solid var(--accent-green); }
+    .kpi-card.blue   { border-left: 4px solid var(--accent-blue); }
+    .kpi-card.amber  { border-left: 4px solid var(--accent-amber); }
+
+    .kpi-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+    .kpi-icon.purple { background: var(--accent-purple-soft); }
+    .kpi-icon.green  { background: var(--accent-green-soft); }
+    .kpi-icon.blue   { background: var(--accent-blue-soft); }
+    .kpi-icon.amber  { background: var(--accent-amber-soft); }
+
+    .kpi-content { flex: 1; }
+    .kpi-label {
+      font-size: 0.75rem; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+    .kpi-value {
+      font-size: 1rem; font-weight: 600; color: var(--text-primary);
+    }
+    .kpi-value.yes { color: var(--accent-green); }
+    .kpi-value.no  { color: var(--text-muted); }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+    .card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
+    .card-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+    }
+    .card-icon.purple { background: var(--accent-purple-soft); }
+    .card-icon.green  { background: var(--accent-green-soft); }
+    .card-icon.blue   { background: var(--accent-blue-soft); }
+    .card-icon.amber  { background: var(--accent-amber-soft); }
+
+    .card-title { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); }
+    .card p { color: var(--text-secondary); margin-bottom: 1rem; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .card ul { list-style: none; margin: 1rem 0; }
+    .card li { position: relative; padding-left: 1.5rem; margin-bottom: 0.625rem; color: var(--text-secondary); }
+    .card li::before { content: "→"; position: absolute; left: 0; color: var(--accent-purple); font-weight: 600; }
+
+    .note-box {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-purple);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .note-box.green { border-left-color: var(--accent-green); }
+    .note-box.amber { border-left-color: var(--accent-amber); }
+    .note-box.blue  { border-left-color: var(--accent-blue); }
+
+    .note-box-label {
+      font-size: 0.75rem; font-weight: 600; color: var(--accent-purple);
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 0.375rem;
+    }
+    .note-box.green .note-box-label { color: var(--accent-green); }
+    .note-box.amber .note-box-label { color: var(--accent-amber); }
+    .note-box.blue  .note-box-label { color: var(--accent-blue); }
+
+    .note-box-content { font-size: 0.9375rem; color: var(--text-primary); font-style: italic; }
+
+    .clinical-box {
+      background: var(--accent-blue-soft);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+    }
+    .clinical-box-title {
+      font-size: 0.8125rem; font-weight: 600;
+      color: var(--accent-blue); margin-bottom: 0.5rem;
+    }
+    .clinical-box ul { margin: 0; }
+    .clinical-box li { color: var(--text-primary); }
+    .clinical-box li::before { color: var(--accent-blue); }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    th, td {
+      padding: 0.875rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+    th {
+      background: var(--bg-card-alt);
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    td { color: var(--text-secondary); }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--bg-card-alt); }
+
+    .summary-box {
+      background: linear-gradient(135deg, var(--accent-purple-soft) 0%, var(--accent-green-soft) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .summary-box p {
+      font-size: 1.0625rem;
+      color: var(--text-primary);
+      font-weight: 500;
+      margin: 0;
+    }
+
+    /* Simple chart wrapper */
+    .chart-wrap {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+    }
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.375rem 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      background: var(--bg-card);
+    }
+    .swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+      background: var(--text-muted);
+    }
+    .swatch.purple { background: var(--accent-purple); }
+    .swatch.green  { background: var(--accent-green); }
+    .swatch.blue   { background: var(--accent-blue); }
+    .swatch.amber  { background: var(--accent-amber); }
+
+    .sources {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .sources-title {
+      font-size: 1rem; font-weight: 600; color: var(--text-primary);
+      margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .source-list { list-style: none; }
+    .source-list li {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+    .source-list li:last-child { border-bottom: none; }
+    .source-author { font-weight: 500; color: var(--text-primary); }
+    .source-journal { font-style: italic; color: var(--text-muted); }
+
+    footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .disclaimer {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="badge-row">
+        <span class="badge">🧬 Skim Medi Digest</span>
+        <span class="badge">GLP-1</span>
+        <span class="badge green">GIP + GLP-1</span>
+        <span class="badge blue">Edukace</span>
+        <span class="badge amber">Srovnání léků</span>
+      </div>
+
+      <h1>Saxenda vs Ozempic vs Wegovy vs Mounjaro</h1>
+      <p class="subtitle">Liraglutid • Semaglutid (diabetes vs obezita) • Tirzepatid — rozdíly, účinnost a graf za 18 měsíců</p>
+
+      <div class="pills">
+        <span class="pill">Mechanismus účinku</span>
+        <span class="pill">Dávkování</span>
+        <span class="pill">Očekávaný úbytek váhy</span>
+        <span class="pill">Nežádoucí účinky</span>
+        <span class="pill">Praktické tipy</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">💡</div>
+          <h2 class="card-title">Úvod: proč se tyto léky pořád pletou</h2>
+        </div>
+        <p>Na první pohled vypadají podobně: „píchnu si injekci, mám menší hlad a hubnu“. Ve skutečnosti ale mohou být rozdíly zásadní — hlavně mezi <strong>liraglutidem</strong> (Saxenda), <strong>semaglutidem</strong> (Ozempic/Wegovy) a <strong>tirzepatidem</strong> (Mounjaro).</p>
+        <p>Klíčové je pochopit, že <strong>Ozempic a Wegovy mají stejnou účinnou látku (semaglutid)</strong>, ale liší se <strong>indikací a dávkami</strong>. Zatímco Mounjaro (tirzepatid) je <strong>dual-agonista</strong> (GLP-1 + GIP), což často znamená nejvyšší průměrnou účinnost na váhu.</p>
+      </div>
+
+      <!-- KPI Section -->
+      <section class="kpi-section">
+        <h3 class="kpi-section-title">Klíčové rozdíly na první pohled</h3>
+        <div class="kpi-grid">
+          <div class="kpi-card purple">
+            <div class="kpi-icon purple">🕒</div>
+            <div class="kpi-content">
+              <div class="kpi-label">Saxenda (liraglutid)</div>
+              <div class="kpi-value">Denní injekce</div>
+            </div>
+          </div>
+
+          <div class="kpi-card blue">
+            <div class="kpi-icon blue">📆</div>
+            <div class="kpi-content">
+              <div class="kpi-label">Ozempic / Wegovy / Mounjaro</div>
+              <div class="kpi-value">Týdenní injekce</div>
+            </div>
+          </div>
+
+          <div class="kpi-card amber">
+            <div class="kpi-icon amber">⚖️</div>
+            <div class="kpi-content">
+              <div class="kpi-label">Průměrný úbytek váhy (RCT)</div>
+              <div class="kpi-value">~8% vs ~15% vs ~21%</div>
+            </div>
+          </div>
+
+          <div class="kpi-card green">
+            <div class="kpi-icon green">🧩</div>
+            <div class="kpi-content">
+              <div class="kpi-label">Mechanismus</div>
+              <div class="kpi-value">GLP-1 vs GLP-1+GIP</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Two column: Saxenda + Ozempic -->
+      <div class="two-col">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon purple">💉</div>
+            <h2 class="card-title">Saxenda = liraglutid (GLP-1 RA)</h2>
+          </div>
+          <p><strong>Liraglutid</strong> je „první velká vlna“ GLP-1 léčby obezity. Funguje spolehlivě, ale má dvě nevýhody: <strong>denní injekce</strong> a obvykle <strong>nižší průměrný úbytek váhy</strong> než modernější molekuly.</p>
+          <ul>
+            <li>Mechanismus: agonista GLP-1 receptoru (sytost, menší příjem energie)</li>
+            <li>Dávkování: denně, titrace do 3.0 mg</li>
+            <li>Účinnost (studie u obezity): průměrně ~<strong>−8%</strong> ve 56. týdnu :contentReference[oaicite:4]{index=4}</li>
+            <li>Typické NÚ: nauzea, zvracení, zácpa/průjem (často při rychlé titraci)</li>
+          </ul>
+
+          <div class="note-box">
+            <div class="note-box-label">📌 Prakticky</div>
+            <div class="note-box-content">„Saxenda je často volba tam, kde není dostupný / vhodný vyšší výkon (Wegovy/Mounjaro), nebo kde někdo lépe snáší denní režim.“</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon blue">🩺</div>
+            <h2 class="card-title">Ozempic = semaglutid (GLP-1 RA, diabetes)</h2>
+          </div>
+          <p><strong>Ozempic</strong> je semaglutid primárně pro diabetes 2. typu. V praxi se často řeší i jeho „vedlejší“ efekt: <strong>úbytek váhy</strong>. Ten je ale typicky menší než u Wegovy, protože jde o jiné dávkování/indikaci.</p>
+          <ul>
+            <li>Mechanismus: agonista GLP-1 receptoru</li>
+            <li>Dávkování: týdně, běžně 0.5–1.0 mg (někde i vyšší dle lokálního schválení)</li>
+            <li>Účinnost na váhu: v jedné z klíčových studií ~<strong>−4.53 kg</strong> ve 30. týdnu (1.0 mg) :contentReference[oaicite:5]{index=5}</li>
+            <li>Typické NÚ: GIT podobně jako u ostatních GLP-1</li>
+          </ul>
+
+          <div class="note-box blue">
+            <div class="note-box-label">📌 Pozor na záměnu</div>
+            <div class="note-box-content">„Ozempic ≠ Wegovy. Stejná účinná látka, ale jiné dávky a cílová indikace.“</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two column: Wegovy + Mounjaro -->
+      <div class="two-col">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon amber">🏷️</div>
+            <h2 class="card-title">Wegovy = semaglutid (GLP-1 RA, obezita)</h2>
+          </div>
+          <p><strong>Wegovy</strong> je semaglutid v dávkách a titraci navržených přímo pro léčbu obezity. V RCT studiích jde o <strong>výrazný průměrný úbytek váhy</strong> a standard moderní GLP-1 léčby obezity.</p>
+          <ul>
+            <li>Mechanismus: GLP-1 receptor agonista (silný efekt na sytost, chuť, příjem energie)</li>
+            <li>Dávkování: týdně, titrace až na 2.4 mg</li>
+            <li>Účinnost (obezita): průměrně <strong>−14.9%</strong> ve 68. týdnu :contentReference[oaicite:6]{index=6}</li>
+            <li>NÚ: GIT, někdy nutná pomalejší titrace</li>
+          </ul>
+
+          <div class="clinical-box">
+            <div class="clinical-box-title">Kdy dává největší smysl</div>
+            <ul>
+              <li>Obezita / nadváha se zdravotními riziky</li>
+              <li>Když je cílem primárně redukce váhy</li>
+              <li>Když je potřeba „stabilní týdenní režim“</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon green">🚀</div>
+            <h2 class="card-title">Mounjaro = tirzepatid (GLP-1 + GIP)</h2>
+          </div>
+          <p><strong>Tirzepatid</strong> kombinuje účinek na <strong>GLP-1 receptor</strong> a <strong>GIP receptor</strong>. V praxi to často znamená nejvyšší průměrnou účinnost na váhu v celé „inkretinové“ třídě.</p>
+          <ul>
+            <li>Mechanismus: dual-agonista (GLP-1 + GIP)</li>
+            <li>Dávkování: týdně, titrace (např. 5 / 10 / 15 mg v RCT)</li>
+            <li>Účinnost (obezita): průměrně až <strong>−20.9%</strong> ve 72. týdnu (15 mg) :contentReference[oaicite:7]{index=7}</li>
+            <li>NÚ: podobně jako GLP-1 (GIT), často pomůže pomalejší titrace</li>
+          </ul>
+
+          <div class="note-box green">
+            <div class="note-box-label">📌 Zjednodušeně</div>
+            <div class="note-box-content">„Když GLP-1 řeší sytost, GIP přidává další metabolickou páku — proto to často vychází ‘silnější’ na váhu.“</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison table -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">📊</div>
+          <h2 class="card-title">Srovnání přehledně</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Lék (značka)</th>
+                <th>Účinná látka</th>
+                <th>Indikace</th>
+                <th>Receptory</th>
+                <th>Frekvence</th>
+                <th>RCT úbytek váhy (orientačně)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Saxenda</td>
+                <td>Liraglutid</td>
+                <td>Obezita</td>
+                <td>GLP-1</td>
+                <td>Denně</td>
+                <td>~−8% / 56 týdnů :contentReference[oaicite:8]{index=8}</td>
+              </tr>
+              <tr>
+                <td>Ozempic</td>
+                <td>Semaglutid</td>
+                <td>Diabetes 2</td>
+                <td>GLP-1</td>
+                <td>Týdně</td>
+                <td>~−4.53 kg / 30 týdnů (1.0 mg) :contentReference[oaicite:9]{index=9}</td>
+              </tr>
+              <tr>
+                <td>Wegovy</td>
+                <td>Semaglutid</td>
+                <td>Obezita</td>
+                <td>GLP-1</td>
+                <td>Týdně</td>
+                <td>~−14.9% / 68 týdnů :contentReference[oaicite:10]{index=10}</td>
+              </tr>
+              <tr>
+                <td>Mounjaro</td>
+                <td>Tirzepatid</td>
+                <td>DM2 / (obezita dle země)</td>
+                <td>GLP-1 + GIP</td>
+                <td>Týdně</td>
+                <td>~−20.9% / 72 týdnů (15 mg) :contentReference[oaicite:11]{index=11}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note-box amber">
+          <div class="note-box-label">⚠️ Důležité k interpretaci</div>
+          <div class="note-box-content">„Čísla jsou průměry z randomizovaných studií (RCT). Reálný výsledek závisí na dávce, titraci, stravě, pohybu a individuální toleranci.“</div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon purple">📈</div>
+          <h2 class="card-title">Graf: průměrné snížení hmotnosti za 18 měsíců</h2>
+        </div>
+
+        <p>Graf níže ukazuje <strong>ilustrační křivky</strong> poklesu váhy (v %) pro 4 režimy. Křivky jsou odvozené z hlavních RCT bodů (56–72 týdnů) a poslední úsek do 18 měsíců je <strong>mírná extrapolace (plateau)</strong>, protože většina studií reportuje 56–72 týdnů. :contentReference[oaicite:12]{index=12}</p>
+
+        <div class="chart-wrap">
+          <svg id="wlChart" viewBox="0 0 860 360" width="100%" height="auto" role="img" aria-label="Graf redukce váhy za 18 měsíců">
+            <!-- axes -->
+            <line x1="60" y1="30" x2="60" y2="310" stroke="currentColor" opacity="0.25"/>
+            <line x1="60" y1="310" x2="830" y2="310" stroke="currentColor" opacity="0.25"/>
+
+            <!-- grid + labels -->
+            <g id="grid"></g>
+
+            <!-- lines -->
+            <polyline id="lineSax" fill="none" stroke="var(--accent-purple)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <polyline id="lineOze" fill="none" stroke="var(--accent-blue)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <polyline id="lineWeg" fill="none" stroke="var(--accent-amber)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <polyline id="lineMou" fill="none" stroke="var(--accent-green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+            <!-- title-ish labels -->
+            <text x="60" y="22" font-size="12" fill="currentColor" opacity="0.7">Pokles váhy (%)</text>
+            <text x="760" y="345" font-size="12" fill="currentColor" opacity="0.7">Měsíce</text>
+          </svg>
+
+          <div class="chart-legend">
+            <span class="legend-item"><span class="swatch purple"></span>Saxenda (liraglutid) — cíl ~−8.5% v 18 měs.</span>
+            <span class="legend-item"><span class="swatch blue"></span>Ozempic (semaglutid) — cíl ~−6% v 18 měs.</span>
+            <span class="legend-item"><span class="swatch amber"></span>Wegovy (semaglutid 2.4) — cíl ~−15.5% v 18 měs.</span>
+            <span class="legend-item"><span class="swatch green"></span>Mounjaro (tirzepatid 15) — cíl ~−21.5% v 18 měs.</span>
+          </div>
+
+          <div class="note-box">
+            <div class="note-box-label">📌 Jak číst graf</div>
+            <div class="note-box-content">„Jde o % pokles od startovní váhy. Křivky nejsou ‘slib’, jen průměrná trajektorie z klinických dat + opatrný odhad do 18 měsíců.“</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practical selection -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">🧭</div>
+          <h2 class="card-title">Jak uvažovat o volbě (bez medicínských rozhodnutí za tebe)</h2>
+        </div>
+        <p>V praxi se volba často láme na třech věcech: <strong>cílový problém</strong> (diabetes vs obezita), <strong>tolerance</strong> (GIT) a <strong>dostupnost</strong> (logistika, úhrady, země).</p>
+        <ul>
+          <li>Pokud je cílem primárně <strong>obezita</strong>, obvykle se porovnává Wegovy vs tirzepatid (kde je dostupný).</li>
+          <li>Pokud je primární <strong>diabetes 2</strong>, často se řeší semaglutid/tirzepatid dle profilu pacienta.</li>
+          <li>Pokud někdo nesnese rychlou titraci, často pomůže <strong>pomalejší náběh</strong> (u všech tříd).</li>
+        </ul>
+        <div class="note-box blue">
+          <div class="note-box-label">⚠️ Poznámka</div>
+          <div class="note-box-content">„Tento článek je edukativní. Konkrétní lék a dávkování vždy patří do rukou lékaře.“</div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary-box">
+        <p>💡 <strong>Shrnutí:</strong> Saxenda (liraglutid) = funkční, ale slabší a denně. Ozempic (semaglutid) = primárně diabetes, menší váhový efekt než Wegovy. Wegovy (semaglutid 2.4) = standard GLP-1 pro obezitu. Mounjaro (tirzepatid) = často nejvyšší průměrný úbytek váhy díky GLP-1 + GIP.</p>
+      </div>
+
+      <!-- Sources -->
+      <section class="sources">
+        <h3 class="sources-title">📚 Zdroje</h3>
+        <ul class="source-list">
+          <li><span class="source-author">Pi-Sunyer X. et al.</span> Randomized trial of liraglutide 3.0 mg in obesity. <span class="source-journal">NEJM, 2015.</span> :contentReference[oaicite:13]{index=13}</li>
+          <li><span class="source-author">Wilding JPH. et al.</span> Semaglutide 2.4 mg once weekly in overweight/obesity (STEP 1). <span class="source-journal">NEJM, 2021.</span> :contentReference[oaicite:14]{index=14}</li>
+          <li><span class="source-author">Jastreboff AM. et al.</span> Tirzepatide once weekly for obesity (SURMOUNT-1). <span class="source-journal">NEJM, 2022.</span> :contentReference[oaicite:15]{index=15}</li>
+          <li><span class="source-author">Sorli C. et al.</span> Once-weekly semaglutide in type 2 diabetes (SUSTAIN). <span class="source-journal">Lancet Diabetes & Endocrinology, 2017.</span> :contentReference[oaicite:16]{index=16}</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="disclaimer">
+        ⚠️ Tento obsah je určen pouze pro informační a edukační účely. Nenahrazuje odbornou lékařskou konzultaci, diagnostiku ani léčbu. V případě zdravotních obtíží se vždy poraďte s lékařem.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Ilustrační křivky pro 0–18 měsíců.
+    // Vychází z RCT bodů (56–72 týdnů) a poslední část do 18 měs. je mírná extrapolace (plateau).
+    // Osy: X=měsíce 0..18, Y=0..-25 (%)
+
+    const months = Array.from({length: 19}, (_, i) => i);
+
+    // Helper: piecewise curve that rises quickly then plateaus.
+    // target = konečný pokles v 18. měsíci (záporné číslo)
+    // midMonth = kdy typicky dojde k většině efektu
+    function curve(target, midMonth) {
+      return months.map(m => {
+        if (m <= midMonth) {
+          // rychlejší začátek (kvadratická)
+          const t = m / midMonth;
+          return target * (0.15 + 0.85 * t * t);
+        }
+        // plateau: poslední část jde pomaleji
+        const t2 = (m - midMonth) / (18 - midMonth);
+        return target * (0.92 + 0.08 * t2);
+      });
+    }
+
+    // Orientační cíle pro 18 měsíců (viz legenda).
+    const saxenda = curve(-8.5, 12);   // RCT ~-8% v 56. týdnu (~13m), pak plateau
+    const ozempic = curve(-6.0, 9);    // diabetes dávky: menší efekt, dřívější plateau
+    const wegovy  = curve(-15.5, 14);  // RCT ~-14.9% v 68. týdnu (~16m), pak mírně
+    const mounjaro= curve(-21.5, 14);  // RCT ~-20.9% v 72. týdnu (~16.6m), pak mírně
+
+    // SVG mapping
+    const svg = document.getElementById("wlChart");
+    const grid = document.getElementById("grid");
+    const W = 860, H = 360;
+    const padL = 60, padR = 30, padT = 30, padB = 50;
+    const x0 = padL, x1 = W - padR;
+    const y0 = padT, y1 = H - padB;
+
+    // y range: 0 to -25
+    const yMin = -25, yMax = 0;
+
+    function xScale(m) {
+      return x0 + (m / 18) * (x1 - x0);
+    }
+    function yScale(v) {
+      // v is negative, map to y0..y1
+      const t = (v - yMax) / (yMin - yMax); // v=0 =>0 ; v=-25=>1
+      return y0 + t * (y1 - y0);
+    }
+    function toPoints(arr) {
+      return arr.map((v, i) => `${xScale(i)},${yScale(v)}`).join(" ");
+    }
+
+    // grid: y ticks every 5%
+    const yTicks = [0, -5, -10, -15, -20, -25];
+    yTicks.forEach(val => {
+      const y = yScale(val);
+      const line = document.createElementNS("http://www.w3.org/2000/svg","line");
+      line.setAttribute("x1", x0);
+      line.setAttribute("x2", x1);
+      line.setAttribute("y1", y);
+      line.setAttribute("y2", y);
+      line.setAttribute("stroke", "currentColor");
+      line.setAttribute("opacity", "0.12");
+      grid.appendChild(line);
+
+      const label = document.createElementNS("http://www.w3.org/2000/svg","text");
+      label.setAttribute("x", 16);
+      label.setAttribute("y", y + 4);
+      label.setAttribute("font-size", "12");
+      label.setAttribute("fill", "currentColor");
+      label.setAttribute("opacity", "0.65");
+      label.textContent = `${val}%`;
+      grid.appendChild(label);
+    });
+
+    // x ticks every 3 months
+    [0,3,6,9,12,15,18].forEach(m => {
+      const x = xScale(m);
+      const line = document.createElementNS("http://www.w3.org/2000/svg","line");
+      line.setAttribute("x1", x);
+      line.setAttribute("x2", x);
+      line.setAttribute("y1", y0);
+      line.setAttribute("y2", y1);
+      line.setAttribute("stroke", "currentColor");
+      line.setAttribute("opacity", "0.06");
+      grid.appendChild(line);
+
+      const label = document.createElementNS("http://www.w3.org/2000/svg","text");
+      label.setAttribute("x", x - 6);
+      label.setAttribute("y", H - 20);
+      label.setAttribute("font-size", "12");
+      label.setAttribute("fill", "currentColor");
+      label.setAttribute("opacity", "0.65");
+      label.textContent = `${m}`;
+      grid.appendChild(label);
+    });
+
+    document.getElementById("lineSax").setAttribute("points", toPoints(saxenda));
+    document.getElementById("lineOze").setAttribute("points", toPoints(ozempic));
+    document.getElementById("lineWeg").setAttribute("points", toPoints(wegovy));
+    document.getElementById("lineMou").setAttribute("points", toPoints(mounjaro));
+  </script>
+</body>
+</html>
