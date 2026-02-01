@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saxenda vs Ozempic vs Wegovy vs Mounjaro: srovnání účinnosti a rozdílů | Skim Medi Digest</title>
+  <title>Saxenda vs Ozempic vs Wegovy vs Mounjaro: srovnání účinnosti a rozdílů | Slim Medi Diget</title>
   <meta name="description" content="Důkladné srovnání liraglutidu (Saxenda), semaglutidu (Ozempic/Wegovy) a tirzepatidu (Mounjaro). Mechanismus, dávkování, účinnost a graf redukce váhy za 18 měsíců.">
 
   <!-- Open Graph meta tagy -->
@@ -12,12 +12,12 @@
   <meta property="og:url" content="https://med-digest-bot.lovable.app/clanek/srovnani-saxenda-ozempic-wegovy-mounjaro">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="cs_CZ">
-  <meta property="og:site_name" content="Skim Medi Digest">
+  <meta property="og:site_name" content="Slim Medi Diget">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Saxenda vs Ozempic vs Wegovy vs Mounjaro">
-  <meta name="twitter:description" content="Srovnání GLP-1 léků a tirzepatidu: účinnost, rozdíly a graf za 18 měsíců.">
+  <meta name="twitter:description" content="Srovnání GLP-1 léků a tirzepatidu: účinnost, rozdílů a graf za 18 měsíců.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,8 +159,6 @@
     .kpi-value {
       font-size: 1rem; font-weight: 600; color: var(--text-primary);
     }
-    .kpi-value.yes { color: var(--accent-green); }
-    .kpi-value.no  { color: var(--text-muted); }
 
     .card {
       background: var(--bg-card);
@@ -209,7 +207,6 @@
     .note-box.green .note-box-label { color: var(--accent-green); }
     .note-box.amber .note-box-label { color: var(--accent-amber); }
     .note-box.blue  .note-box-label { color: var(--accent-blue); }
-
     .note-box-content { font-size: 0.9375rem; color: var(--text-primary); font-style: italic; }
 
     .clinical-box {
@@ -288,6 +285,8 @@
       border-radius: 9999px;
       background: var(--bg-card);
     }
+    .legend-item.bold { font-weight: 700; color: var(--text-primary); } /* <-- (3) */
+
     .swatch {
       width: 10px;
       height: 10px;
@@ -337,6 +336,9 @@
       gap: 1.5rem;
     }
     @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+
+    a { color: inherit; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.25); }
+    a:hover { text-decoration-color: rgba(255,255,255,0.6); }
   </style>
 </head>
 
@@ -344,7 +346,7 @@
   <header>
     <div class="container">
       <div class="badge-row">
-        <span class="badge">🧬 Skim Medi Digest</span>
+        <span class="badge">🧬 Slim Medi Diget</span>
         <span class="badge">GLP-1</span>
         <span class="badge green">GIP + GLP-1</span>
         <span class="badge blue">Edukace</span>
@@ -373,7 +375,6 @@
           <div class="card-icon blue">💡</div>
           <h2 class="card-title">Úvod: proč se tyto léky pořád pletou</h2>
         </div>
-        <p>Na první pohled vypadají podobně: „píchnu si injekci, mám menší hlad a hubnu“. Ve skutečnosti ale mohou být rozdíly zásadní — hlavně mezi <strong>liraglutidem</strong> (Saxenda), <strong>semaglutidem</strong> (Ozempic/Wegovy) a <strong>tirzepatidem</strong> (Mounjaro).</p>
         <p>Klíčové je pochopit, že <strong>Ozempic a Wegovy mají stejnou účinnou látku (semaglutid)</strong>, ale liší se <strong>indikací a dávkami</strong>. Zatímco Mounjaro (tirzepatid) je <strong>dual-agonista</strong> (GLP-1 + GIP), což často znamená nejvyšší průměrnou účinnost na váhu.</p>
       </div>
 
@@ -426,7 +427,7 @@
           <ul>
             <li>Mechanismus: agonista GLP-1 receptoru (sytost, menší příjem energie)</li>
             <li>Dávkování: denně, titrace do 3.0 mg</li>
-            <li>Účinnost (studie u obezity): průměrně ~<strong>−8%</strong> ve 56. týdnu :contentReference[oaicite:4]{index=4}</li>
+            <li>Účinnost (obezita): průměrně ~<strong>−8%</strong> ve 56. týdnu (NEJM 2015)</li>
             <li>Typické NÚ: nauzea, zvracení, zácpa/průjem (často při rychlé titraci)</li>
           </ul>
 
@@ -445,7 +446,11 @@
           <ul>
             <li>Mechanismus: agonista GLP-1 receptoru</li>
             <li>Dávkování: týdně, běžně 0.5–1.0 mg (někde i vyšší dle lokálního schválení)</li>
-            <li>Účinnost na váhu: v jedné z klíčových studií ~<strong>−4.53 kg</strong> ve 30. týdnu (1.0 mg) :contentReference[oaicite:5]{index=5}</li>
+            <li>
+              Účinnost na váhu: ve studii (semaglutid 1.0 mg) poklesla hmotnost ve 30. týdnu průměrně o
+              <strong>−4,53 kg</strong>. Při průměrné vstupní váze ~91,9 kg je to zhruba <strong>~−4,9 %</strong>.
+              (<a href="https://pubmed.ncbi.nlm.nih.gov/28110911/" target="_blank" rel="noreferrer">Sorli et al., 2017</a>)
+            </li>
             <li>Typické NÚ: GIT podobně jako u ostatních GLP-1</li>
           </ul>
 
@@ -467,18 +472,9 @@
           <ul>
             <li>Mechanismus: GLP-1 receptor agonista (silný efekt na sytost, chuť, příjem energie)</li>
             <li>Dávkování: týdně, titrace až na 2.4 mg</li>
-            <li>Účinnost (obezita): průměrně <strong>−14.9%</strong> ve 68. týdnu :contentReference[oaicite:6]{index=6}</li>
+            <li>Účinnost (obezita): průměrně <strong>−14.9%</strong> ve 68. týdnu (STEP 1, NEJM 2021)</li>
             <li>NÚ: GIT, někdy nutná pomalejší titrace</li>
           </ul>
-
-          <div class="clinical-box">
-            <div class="clinical-box-title">Kdy dává největší smysl</div>
-            <ul>
-              <li>Obezita / nadváha se zdravotními riziky</li>
-              <li>Když je cílem primárně redukce váhy</li>
-              <li>Když je potřeba „stabilní týdenní režim“</li>
-            </ul>
-          </div>
         </div>
 
         <div class="card">
@@ -490,14 +486,9 @@
           <ul>
             <li>Mechanismus: dual-agonista (GLP-1 + GIP)</li>
             <li>Dávkování: týdně, titrace (např. 5 / 10 / 15 mg v RCT)</li>
-            <li>Účinnost (obezita): průměrně až <strong>−20.9%</strong> ve 72. týdnu (15 mg) :contentReference[oaicite:7]{index=7}</li>
+            <li>Účinnost (obezita): průměrně až <strong>−20.9%</strong> ve 72. týdnu (15 mg, SURMOUNT-1, NEJM 2022)</li>
             <li>NÚ: podobně jako GLP-1 (GIT), často pomůže pomalejší titrace</li>
           </ul>
-
-          <div class="note-box green">
-            <div class="note-box-label">📌 Zjednodušeně</div>
-            <div class="note-box-content">„Když GLP-1 řeší sytost, GIP přidává další metabolickou páku — proto to často vychází ‘silnější’ na váhu.“</div>
-          </div>
         </div>
       </div>
 
@@ -527,7 +518,7 @@
                 <td>Obezita</td>
                 <td>GLP-1</td>
                 <td>Denně</td>
-                <td>~−8% / 56 týdnů :contentReference[oaicite:8]{index=8}</td>
+                <td><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1411892" target="_blank" rel="noreferrer">~−8% / 56 týdnů (NEJM 2015)</a></td>
               </tr>
               <tr>
                 <td>Ozempic</td>
@@ -535,7 +526,7 @@
                 <td>Diabetes 2</td>
                 <td>GLP-1</td>
                 <td>Týdně</td>
-                <td>~−4.53 kg / 30 týdnů (1.0 mg) :contentReference[oaicite:9]{index=9}</td>
+                <td><a href="https://pubmed.ncbi.nlm.nih.gov/28110911/" target="_blank" rel="noreferrer">~−4,53 kg (~−4,9%) / 30 týdnů (1.0 mg)</a></td>
               </tr>
               <tr>
                 <td>Wegovy</td>
@@ -543,7 +534,7 @@
                 <td>Obezita</td>
                 <td>GLP-1</td>
                 <td>Týdně</td>
-                <td>~−14.9% / 68 týdnů :contentReference[oaicite:10]{index=10}</td>
+                <td><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" target="_blank" rel="noreferrer">~−14.9% / 68 týdnů (NEJM 2021)</a></td>
               </tr>
               <tr>
                 <td>Mounjaro</td>
@@ -551,15 +542,10 @@
                 <td>DM2 / (obezita dle země)</td>
                 <td>GLP-1 + GIP</td>
                 <td>Týdně</td>
-                <td>~−20.9% / 72 týdnů (15 mg) :contentReference[oaicite:11]{index=11}</td>
+                <td><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2206038" target="_blank" rel="noreferrer">~−20.9% / 72 týdnů (15 mg, NEJM 2022)</a></td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div class="note-box amber">
-          <div class="note-box-label">⚠️ Důležité k interpretaci</div>
-          <div class="note-box-content">„Čísla jsou průměry z randomizovaných studií (RCT). Reálný výsledek závisí na dávce, titraci, stravě, pohybu a individuální toleranci.“</div>
         </div>
       </div>
 
@@ -570,30 +556,25 @@
           <h2 class="card-title">Graf: průměrné snížení hmotnosti za 18 měsíců</h2>
         </div>
 
-        <p>Graf níže ukazuje <strong>ilustrační křivky</strong> poklesu váhy (v %) pro 4 režimy. Křivky jsou odvozené z hlavních RCT bodů (56–72 týdnů) a poslední úsek do 18 měsíců je <strong>mírná extrapolace (plateau)</strong>, protože většina studií reportuje 56–72 týdnů. :contentReference[oaicite:12]{index=12}</p>
+        <p>Graf níže ukazuje <strong>ilustrační křivky</strong> poklesu váhy (v %) pro 4 režimy. Křivky jsou záměrně „hladké“ (exponenciální saturace), aby odpovídaly typickému klinickému průběhu: rychlejší začátek a postupné plateau.</p>
 
         <div class="chart-wrap">
           <svg id="wlChart" viewBox="0 0 860 360" width="100%" height="auto" role="img" aria-label="Graf redukce váhy za 18 měsíců">
-            <!-- axes -->
             <line x1="60" y1="30" x2="60" y2="310" stroke="currentColor" opacity="0.25"/>
             <line x1="60" y1="310" x2="830" y2="310" stroke="currentColor" opacity="0.25"/>
-
-            <!-- grid + labels -->
             <g id="grid"></g>
 
-            <!-- lines -->
             <polyline id="lineSax" fill="none" stroke="var(--accent-purple)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <polyline id="lineOze" fill="none" stroke="var(--accent-blue)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <polyline id="lineWeg" fill="none" stroke="var(--accent-amber)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <polyline id="lineMou" fill="none" stroke="var(--accent-green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 
-            <!-- title-ish labels -->
             <text x="60" y="22" font-size="12" fill="currentColor" opacity="0.7">Pokles váhy (%)</text>
             <text x="760" y="345" font-size="12" fill="currentColor" opacity="0.7">Měsíce</text>
           </svg>
 
           <div class="chart-legend">
-            <span class="legend-item"><span class="swatch purple"></span>Saxenda (liraglutid) — cíl ~−8.5% v 18 měs.</span>
+            <span class="legend-item bold"><span class="swatch purple"></span>Saxenda (liraglutid) — cíl ~−8.5% v 18 měs.</span>
             <span class="legend-item"><span class="swatch blue"></span>Ozempic (semaglutid) — cíl ~−6% v 18 měs.</span>
             <span class="legend-item"><span class="swatch amber"></span>Wegovy (semaglutid 2.4) — cíl ~−15.5% v 18 měs.</span>
             <span class="legend-item"><span class="swatch green"></span>Mounjaro (tirzepatid 15) — cíl ~−21.5% v 18 měs.</span>
@@ -606,39 +587,16 @@
         </div>
       </div>
 
-      <!-- Practical selection -->
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon blue">🧭</div>
-          <h2 class="card-title">Jak uvažovat o volbě (bez medicínských rozhodnutí za tebe)</h2>
-        </div>
-        <p>V praxi se volba často láme na třech věcech: <strong>cílový problém</strong> (diabetes vs obezita), <strong>tolerance</strong> (GIT) a <strong>dostupnost</strong> (logistika, úhrady, země).</p>
-        <ul>
-          <li>Pokud je cílem primárně <strong>obezita</strong>, obvykle se porovnává Wegovy vs tirzepatid (kde je dostupný).</li>
-          <li>Pokud je primární <strong>diabetes 2</strong>, často se řeší semaglutid/tirzepatid dle profilu pacienta.</li>
-          <li>Pokud někdo nesnese rychlou titraci, často pomůže <strong>pomalejší náběh</strong> (u všech tříd).</li>
-        </ul>
-        <div class="note-box blue">
-          <div class="note-box-label">⚠️ Poznámka</div>
-          <div class="note-box-content">„Tento článek je edukativní. Konkrétní lék a dávkování vždy patří do rukou lékaře.“</div>
-        </div>
-      </div>
-
-      <!-- Summary -->
-      <div class="summary-box">
-        <p>💡 <strong>Shrnutí:</strong> Saxenda (liraglutid) = funkční, ale slabší a denně. Ozempic (semaglutid) = primárně diabetes, menší váhový efekt než Wegovy. Wegovy (semaglutid 2.4) = standard GLP-1 pro obezitu. Mounjaro (tirzepatid) = často nejvyšší průměrný úbytek váhy díky GLP-1 + GIP.</p>
-      </div>
-
-      <!-- Sources -->
       <section class="sources">
         <h3 class="sources-title">📚 Zdroje</h3>
         <ul class="source-list">
-          <li><span class="source-author">Pi-Sunyer X. et al.</span> Randomized trial of liraglutide 3.0 mg in obesity. <span class="source-journal">NEJM, 2015.</span> :contentReference[oaicite:13]{index=13}</li>
-          <li><span class="source-author">Wilding JPH. et al.</span> Semaglutide 2.4 mg once weekly in overweight/obesity (STEP 1). <span class="source-journal">NEJM, 2021.</span> :contentReference[oaicite:14]{index=14}</li>
-          <li><span class="source-author">Jastreboff AM. et al.</span> Tirzepatide once weekly for obesity (SURMOUNT-1). <span class="source-journal">NEJM, 2022.</span> :contentReference[oaicite:15]{index=15}</li>
-          <li><span class="source-author">Sorli C. et al.</span> Once-weekly semaglutide in type 2 diabetes (SUSTAIN). <span class="source-journal">Lancet Diabetes & Endocrinology, 2017.</span> :contentReference[oaicite:16]{index=16}</li>
+          <li><span class="source-author">Pi-Sunyer X. et al.</span> Randomized trial of liraglutide 3.0 mg in obesity. <span class="source-journal">NEJM, 2015.</span> <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1411892" target="_blank" rel="noreferrer">Link</a></li>
+          <li><span class="source-author">Wilding JPH. et al.</span> Semaglutide 2.4 mg once weekly in overweight/obesity (STEP 1). <span class="source-journal">NEJM, 2021.</span> <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183" target="_blank" rel="noreferrer">Link</a></li>
+          <li><span class="source-author">Jastreboff AM. et al.</span> Tirzepatide once weekly for obesity (SURMOUNT-1). <span class="source-journal">NEJM, 2022.</span> <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2206038" target="_blank" rel="noreferrer">Link</a></li>
+          <li><span class="source-author">Sorli C. et al.</span> Once-weekly semaglutide in type 2 diabetes. <span class="source-journal">Lancet Diabetes Endocrinol, 2017.</span> <a href="https://pubmed.ncbi.nlm.nih.gov/28110911/" target="_blank" rel="noreferrer">Link</a></li>
         </ul>
       </section>
+
     </div>
   </main>
 
@@ -651,50 +609,30 @@
   </footer>
 
   <script>
-    // Ilustrační křivky pro 0–18 měsíců.
-    // Vychází z RCT bodů (56–72 týdnů) a poslední část do 18 měs. je mírná extrapolace (plateau).
-    // Osy: X=měsíce 0..18, Y=0..-25 (%)
+    const months = Array.from({ length: 19 }, (_, i) => i);
 
-    const months = Array.from({length: 19}, (_, i) => i);
-
-    // Helper: piecewise curve that rises quickly then plateaus.
-    // target = konečný pokles v 18. měsíci (záporné číslo)
-    // midMonth = kdy typicky dojde k většině efektu
-    function curve(target, midMonth) {
-      return months.map(m => {
-        if (m <= midMonth) {
-          // rychlejší začátek (kvadratická)
-          const t = m / midMonth;
-          return target * (0.15 + 0.85 * t * t);
-        }
-        // plateau: poslední část jde pomaleji
-        const t2 = (m - midMonth) / (18 - midMonth);
-        return target * (0.92 + 0.08 * t2);
-      });
+    // Exponenciální saturace směrem k cílovému poklesu:
+    // y(m) = target * (1 - exp(-k*m))
+    function expCurve(target, k) {
+      return months.map(m => target * (1 - Math.exp(-k * m)));
     }
 
-    // Orientační cíle pro 18 měsíců (viz legenda).
-    const saxenda = curve(-8.5, 12);   // RCT ~-8% v 56. týdnu (~13m), pak plateau
-    const ozempic = curve(-6.0, 9);    // diabetes dávky: menší efekt, dřívější plateau
-    const wegovy  = curve(-15.5, 14);  // RCT ~-14.9% v 68. týdnu (~16m), pak mírně
-    const mounjaro= curve(-21.5, 14);  // RCT ~-20.9% v 72. týdnu (~16.6m), pak mírně
+    // cíle pro 18 měsíců (orientačně)
+    const saxenda  = expCurve(-8.5, 0.18);
+    const ozempic  = expCurve(-6.0, 0.22);
+    const wegovy   = expCurve(-15.5, 0.16);
+    const mounjaro = expCurve(-21.5, 0.17);
 
-    // SVG mapping
-    const svg = document.getElementById("wlChart");
     const grid = document.getElementById("grid");
     const W = 860, H = 360;
     const padL = 60, padR = 30, padT = 30, padB = 50;
     const x0 = padL, x1 = W - padR;
     const y0 = padT, y1 = H - padB;
 
-    // y range: 0 to -25
     const yMin = -25, yMax = 0;
 
-    function xScale(m) {
-      return x0 + (m / 18) * (x1 - x0);
-    }
+    function xScale(m) { return x0 + (m / 18) * (x1 - x0); }
     function yScale(v) {
-      // v is negative, map to y0..y1
       const t = (v - yMax) / (yMin - yMax); // v=0 =>0 ; v=-25=>1
       return y0 + t * (y1 - y0);
     }
@@ -702,15 +640,13 @@
       return arr.map((v, i) => `${xScale(i)},${yScale(v)}`).join(" ");
     }
 
-    // grid: y ticks every 5%
-    const yTicks = [0, -5, -10, -15, -20, -25];
-    yTicks.forEach(val => {
+    // y ticks every 5%
+    [0, -5, -10, -15, -20, -25].forEach(val => {
       const y = yScale(val);
+
       const line = document.createElementNS("http://www.w3.org/2000/svg","line");
-      line.setAttribute("x1", x0);
-      line.setAttribute("x2", x1);
-      line.setAttribute("y1", y);
-      line.setAttribute("y2", y);
+      line.setAttribute("x1", x0); line.setAttribute("x2", x1);
+      line.setAttribute("y1", y);  line.setAttribute("y2", y);
       line.setAttribute("stroke", "currentColor");
       line.setAttribute("opacity", "0.12");
       grid.appendChild(line);
@@ -728,11 +664,10 @@
     // x ticks every 3 months
     [0,3,6,9,12,15,18].forEach(m => {
       const x = xScale(m);
+
       const line = document.createElementNS("http://www.w3.org/2000/svg","line");
-      line.setAttribute("x1", x);
-      line.setAttribute("x2", x);
-      line.setAttribute("y1", y0);
-      line.setAttribute("y2", y1);
+      line.setAttribute("x1", x); line.setAttribute("x2", x);
+      line.setAttribute("y1", y0); line.setAttribute("y2", y1);
       line.setAttribute("stroke", "currentColor");
       line.setAttribute("opacity", "0.06");
       grid.appendChild(line);
